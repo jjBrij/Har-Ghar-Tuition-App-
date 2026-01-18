@@ -1,0 +1,826 @@
+
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Home{% endblock title %}
+
+{%block container%}
+
+ <!-- About Section -->
+ <br>
+ <div class="container-fluid" id="about-us">
+
+   <div class="row align-items-center">
+     <!-- Left Column - Description -->
+     <div class="col-md-6 mx-auto">
+       <div class="company-badge mb-4">
+         <i class="bi bi-gear-fill me-2"></i>
+         <strong class=" px-2 py-1">Working for your success</strong>
+       </div>
+       <h2 class="mb-3">Welcome to HarGhar Pathshala</h2>
+
+       <h1 class="mb-4">
+         Provides Home Tution, <br>
+         Online Tution and Course Coaching <br>
+         
+       </h1>
+       <h3 class="text-success">
+       <span class="animated-text">Welcome to the HarGhar Pathshala</span>
+         <span class="animated-text">Phone: 8859991011   </span>
+         <span class="animated-text">Gmail:<br>HarGharpathshala03@gmail.com</span>
+         <span class="animated-text">Best Tution Site</span></h3>
+         <br>
+         <br>
+        <br>
+ 
+     
+
+       <div class="hero-buttons mb-4">
+         <a href="/" class="btn btn-success mx-1">Get Started</a>
+       </div>
+
+       <!-- Feature List -->
+       <div class="row feature-list-wrapper">
+         <div class="col-md-6">
+
+           <img src="{% static 'app/img/aa.webp' %}"
+             class="img-fluid" alt="Tuition Image">
+
+         </div>
+         <div class="col-md-6">
+           <ul class="feature-list">
+             <li><i class="bi bi-check-circle-fill"></i> Home Tution 
+               </li>
+             <li><i class="bi bi-check-circle-fill"></i> Online Tution</li>
+             <li><i class="bi bi-check-circle-fill"></i> Coaching Available
+               </li>
+             <li><i class="bi bi-check-circle-fill"></i> Technical classes 
+               </li>
+             <li><i class="bi bi-check-circle-fill"></i> Teaching Job Opportunities</li>
+             <li><i class="bi bi-check-circle-fill"></i> Competative Exam Preparation</li>
+           </ul>
+         </div>
+       </div>
+     </div>
+
+     <!-- Right Column - Image Section -->
+     <div class="col-md-6 text-center">
+       <img src="{% static 'app/img/third.webp' %}" class="img-fluid rounded"
+         alt="Our Team">
+     </div>
+   </div>
+
+   <div class="container py-5">
+     <div class="row row-cols-1 row-cols-md-4 g-4">
+       <div class="col">
+         <div class="card h-100 text-center shadow">
+           <div class="card-body">
+             <div class="display-4 text-primary mb-2">
+               <i class="bi bi-people"></i>
+             </div>
+             <h2 class="card-title mb-3">1,234</h2>
+             <p class="card-text text-muted">Active Users</p>
+           </div>
+         </div>
+       </div>
+
+       <div class="col">
+         <div class="card h-100 text-center shadow">
+           <div class="card-body">
+             <div class="display-4 text-success mb-2">
+               <i class="bi bi-journal-check"></i>
+             </div>
+             <h2 class="card-title mb-3">56%</h2>
+             <p class="card-text text-muted">Growth Rate</p>
+           </div>
+         </div>
+       </div>
+
+       <div class="col">
+         <div class="card h-100 text-center shadow">
+           <div class="card-body">
+             <div class="display-4 text-primary mb-2">
+               <i class="bi bi-star"></i>
+             </div>
+             <h2 class="card-title mb-3">4.8</h2>
+             <p class="card-text text-muted">Average Rating</p>
+           </div>
+         </div>
+       </div>
+
+       <div class="col">
+         <div class="card h-100 text-center shadow">
+           <div class="card-body">
+             <div class="display-4 text-danger mb-2">
+               <i class="bi bi-building"></i>
+             </div>
+             <h2 class="card-title mb-3">10</h2>
+             <p class="card-text text-muted">classrooms</p>
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>
+
+   <div class="row">
+     <div class="col-lg-10 mx-auto">
+       <h2 class="mb-4">Our Vision</h2>
+       <p class="mb-4">
+         We strive to empower students by offering top-notch tutoring
+         services, whether
+         through home tuition or online learning. By providing a
+         comprehensive Learning
+         Management System (LMS) and access to experienced tutors, we aim to
+         eliminate
+         barriers in education and help students achieve their academic goals
+         and dream
+         careers.
+       </p>
+
+       <h2 class="mb-4">Our Mission</h2>
+       <p class="mb-4">
+         Our mission is to deliver high-quality education by connecting
+         students with
+         the best home and online tutors. Through validated educational
+         content, expert
+         guidance, and dedicated counseling, we ensure every student receives
+         personalized support tailored to their academic journey and future
+         aspirations.
+       </p>
+
+       <h2 class="mb-4">Our Team</h2>
+       <p class="mb-4">
+         Our team comprises passionate educators and innovative professionals
+         committed
+         to simplifying education. From helping students and parents select
+         the right
+         courses and subjects to offering personalized learning solutions, we
+         work
+         collaboratively to create a better and more accessible educational
+         experience
+         for all learners.
+       </p>
+
+       <div class="row">
+         <div class="col-md-6">
+           <h2 class="mb-4">How HarGharPathshala Works?</h2>
+           <ul class="steps-list">
+             <li><strong>Ask for a Home Tutor:</strong> Our AI matches
+               students
+               with skilled instructors based on their needs.</li>
+             <li><strong>Interact with Tutors:</strong> Chat with tutors to
+               ensure they are the right fit.</li>
+             <li><strong>Join the Classes:</strong> Enjoy personalized
+               learning
+               at home or in our digital classroom.</li>
+             <li><strong>Examine Your Progress:</strong> Review feedback and
+               study recommendations to identify areas for improvement.</li>
+             <li><strong>Succeed:</strong> Track your grades and gain a
+               competitive advantage with customized learning.</li>
+           </ul>
+
+         </div>
+         <div class="col-md-6">
+           <img src="{% static 'app/img/bb.webp' %}"
+             class="img-fluid" alt="Tuition Image">
+         </div>
+
+       </div>
+
+     </div>
+
+   </div>
+   <div class="container">
+
+     <!-- Our Team Section -->
+     <section id="services" class="container mt-5">
+       <h1 class="text-center mb-5">Our Services</h1>
+       
+       <!-- Cards for Services -->
+       <div class="row">
+         <!-- Home Tuition Card -->
+         <div class="col-sm-6 col-md-4">
+           <div class="card">
+             <div class="card-body">
+               <h5 class="card-title">Home Tuition</h5>
+               <p class="card-text">We provide experienced home tutors for students across India, covering all subjects and classes.</p>
+               <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#homeTuitionModal">View More</button>
+             </div>
+           </div>
+         </div>
+         
+         <!-- Online Tuition Card -->
+         <div class="col-sm-6 col-md-4">
+           <div class="card">
+             <div class="card-body">
+               <h5 class="card-title">Online Tuition</h5>
+               <p class="card-text">Hassle-free online tutoring services available for students across India, covering a wide range of subjects.</p>
+               <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#onlineTuitionModal">View More</button>
+             </div>
+           </div>
+         </div>
+         
+         <!-- Teaching Jobs Card -->
+         <div class="col-sm-6 col-md-4">
+           <div class="card">
+             <div class="card-body">
+               <h5 class="card-title">Teaching Jobs</h5>
+               <p class="card-text">Best platform for professionals seeking jobs in the education sector.</p>
+               <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#teachingJobsModal">View More</button>
+             </div>
+           </div>
+         </div>
+       </div>
+     </section>
+     
+     <!-- Modals -->
+     <!-- Home Tuition Modal -->
+     <div class="modal fade" id="homeTuitionModal" tabindex="-1" aria-labelledby="homeTuitionModalLabel" aria-hidden="true">
+       <div class="modal-dialog modal-lg">
+         <div class="modal-content">
+           <div class="modal-header">
+             <h5 class="modal-title" id="homeTuitionModalLabel">Home Tuition</h5>
+             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+           </div>
+           <div class="modal-body">
+             <h6>Education Boards</h6>
+             <p>CBSE, ICSE, ISC, IGCSE, IB, NIOS, and all other national, international, and state boards.</p>
+             
+             <h6>Academic Classes</h6>
+             <p>Pre Nursery to Class 12.</p>
+             
+             <h6>Subjects for Class 1 to 10</h6>
+             <p>Hindi, English, Maths, Science, Social Science (SST), Sanskrit, Computer, General Knowledge (GK).</p>
+             
+             <h6>Subjects for Class 11 and 12</h6>
+             <p>
+               Science: Mathematics, Physics, Chemistry, Biology, Botany, Geology,Engineering Drawing<br>
+               Arts: History, Geography, Political Science,Sociology,Psychology,Philosophy,Human Rights and Gender Science, Public Administration, Home Science etc.<br>
+               Commerce: Accountancy, Business Studies, Economics,Legal Studies, Entrepreneurship.
+             </p>
+             
+             <h6>Competitive Exams</h6>
+             <p>JEE Mains, JEE Advanced, NEET, CAT,MAT,CMAT,GATE,CLAT and others.</p>
+             <h6>Language Classes</h6>
+             <p>Indian Languages: Hindi, English, Sanskrit, etc.<br>Foreign Languages: German, French, Spanish, and more.</p>
+             
+             <h6>Programming Languages</h6>
+             <p>Python, Java, C++, JavaScript,.NET Training,C language,PHP and others.</p>
+             
+             <h6>IT Training & Courses</h6>
+             <p>Microsoft Office, SAP, Selenium, AWS, Data Science,Adobe Photoshop,Devps,Web Designing,App Development,Angular.js and more.</p>
+
+             <h6>International Exams</h6>
+             <p>ILETS coaching,PTE academic exam coaching, GRE,GMAT,TOEFL and other international competitive exams.</p>
+
+             <h6>Degree Courses</h6>
+             <p>BA,B.Sc,B.COM,BBA,BCA,MA,M.COM,B.TECH,B.Arch,MBA,LLB and other Degree courses.</p>
+
+             
+             
+           </div>
+         </div>
+       </div>
+     </div>
+     
+     <!-- Online Tuition Modal -->
+     <div class="modal fade" id="onlineTuitionModal" tabindex="-1" aria-labelledby="onlineTuitionModalLabel" aria-hidden="true">
+       <div class="modal-dialog modal-lg">
+         <div class="modal-content">
+           <div class="modal-header">
+             <h5 class="modal-title" id="onlineTuitionModalLabel">Online Tuition</h5>
+             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+           </div>
+           <div class="modal-body">
+             <h6>Education Boards</h6>
+             <p>CBSE, ICSE, ISC, IGCSE, IB, NIOS, and all other national, international, and state boards.</p>
+             
+             <h6>Academic Classes</h6>
+             <p>Pre Nursery to Class 12.</p>
+             
+             <h6>Subjects for Class 1 to 10</h6>
+             <p>Hindi, English, Maths, Science, Social Science (SST), Sanskrit, Computer, General Knowledge (GK).</p>
+             
+             <h6>Subjects for Class 11 and 12</h6>
+             <p>
+               Science: Mathematics, Physics, Chemistry, Biology, Botany, Geology,Engineering Drawing<br>
+               Arts: History, Geography, Political Science,Sociology,Psychology,Philosophy,Human Rights and Gender Science, Public Administration, Home Science etc.<br>
+               Commerce: Accountancy, Business Studies, Economics,Legal Studies, Entrepreneurship.
+             </p>
+             
+             <h6>Competitive Exams</h6>
+             <p>JEE Mains, JEE Advanced, NEET, CAT,MAT,CMAT,GATE,CLAT and others.</p>
+             <h6>Language Classes</h6>
+             <p>Indian Languages: Hindi, English, Sanskrit, etc.<br>Foreign Languages: German, French, Spanish, and more.</p>
+             
+             <h6>Programming Languages</h6>
+             <p>Python, Java, C++, JavaScript,.NET Training,C language,PHP and others.</p>
+             
+             <h6>IT Training & Courses</h6>
+             <p>Microsoft Office, SAP, Selenium, AWS, Data Science,Adobe Photoshop,Devps,Web Designing,App Development,Angular.js and more.</p>
+
+             <h6>International Exams</h6>
+             <p>ILETS coaching,PTE academic exam coaching, GRE,GMAT,TOEFL and other international competitive exams.</p>
+
+             <h6>Degree Courses</h6>
+             <p>BA,B.Sc,B.COM,BBA,BCA,MA,M.COM,B.TECH,B.Arch,MBA,LLB and other Degree courses.</p>
+
+           </div>
+         </div>
+       </div>
+     </div>
+
+     <div class="modal fade" id="teachingJobsModal" tabindex="-1" aria-labelledby="teachingJobsModalLabel" aria-hidden="true">
+       <div class="modal-dialog modal-lg">
+         <div class="modal-content">
+           <!-- Modal Header -->
+           <div class="modal-header">
+             <h5 class="modal-title" id="teachingJobsModalLabel">Teaching Jobs</h5>
+             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+           </div>
+           
+           <!-- Modal Body -->
+           <div class="modal-body">
+             <p>
+               We connect educators with opportunities across India. Whether you're looking to teach school-level subjects, conduct online classes, or train students for competitive exams, we provide the platform to grow your career.
+             </p>
+             
+             <h6>Job Categories</h6>
+             <ul>
+               <li>School Teachers (Primary, Secondary, and Higher Secondary Levels)</li>
+               <li>Online Tutors for Academic Subjects</li>
+               <li>Competitive Exam Trainers (JEE, NEET, etc.)</li>
+               <li>Language Instructors (English, Hindi, and Foreign Languages)</li>
+               <li>IT and Programming Trainers (Python, Java, Data Science, etc.)</li>
+               <li>Hobby and Skill Development Trainers (Music, Dance, Yoga, etc.)</li>
+             </ul>
+             
+             <h6>Why Choose Us?</h6>
+             <ul>
+               <li>Wide range of job opportunities in the education sector</li>
+               <li>Work with reputed schools, institutions, and organizations</li>
+               <li>Flexible work options: Full-time, part-time, and freelance</li>
+               <li>Support for career growth and skill enhancement</li>
+             </ul>
+             
+             <h6>How to Apply?</h6>
+             <p>
+               <ol>
+                 <li>Register on our platform with your professional details.</li>
+                 <li>Upload your resume and certifications.</li>
+                 <li>Browse through available job openings and apply directly.</li>
+                 <li>Get matched with potential employers and start teaching.</li>
+               </ol>
+             </p>
+           </div>
+           
+           <!-- Modal Footer -->
+           <div class="modal-footer">
+             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+             <a type="button" class="btn btn-primary" href="{%url 'tutor_application'%}">Explore Jobs</a>
+           </div>
+         </div>
+       </div>
+     </div>
+     
+       </section>
+
+       <!-- parents review -->
+
+       <div class="container py-5">
+         <div class="row row-cols-1 row-cols-md-4 g-4">
+           <div class="col">
+             <div class="card h-100 text-center shadow">
+               <div class="card-body">
+                 <div class="display-4 text-primary mb-2">
+                   <i class="bi bi-chat-left-dots"></i>
+                 </div>
+                 <h2 class="card-title mb-3">Doubt classes</h2>
+                 <p class="card-text text-muted">Available always</p>
+               </div>
+             </div>
+           </div>
+
+           <div class="col">
+             <div class="card h-100 text-center shadow">
+               <div class="card-body">
+                 <div class="display-4 text-success mb-2">
+                   <i class="bi bi-graph-up"></i>
+                 </div>
+                 <h2 class="card-title mb-3">56%</h2>
+                 <p class="card-text text-muted">Growth Rate</p>
+               </div>
+             </div>
+           </div>
+
+           <div class="col">
+             <div class="card h-100 text-center shadow">
+               <div class="card-body">
+                 <div class="display-4 text-primary mb-2">
+                   <i class="bi bi-star"></i>
+                 </div>
+                 <h2 class="card-title mb-3">4.8</h2>
+                 <p class="card-text text-muted">Average Rating</p>
+               </div>
+             </div>
+           </div>
+
+           <div class="col">
+             <div class="card h-100 text-center shadow">
+               <div class="card-body">
+                 <div class="display-4 text-danger mb-2">
+                   <i class="bi bi-credit-card"></i>
+                 </div>
+                 <h2 class="card-title mb-3">Easy Payment</h2>
+                 <p class="card-text text-muted">RazorPay</p>
+               </div>
+             </div>
+           </div>
+         </div>
+       </div>
+
+       <section id="reviews" class="container mt-5">
+         <h2 class="text-center text-primary mb-5">What Our Parents Say</h2>
+
+         <div class="row g-5">
+
+           <div class="col-lg-6">
+             <div class="testimonial-item">
+               <img src="{% static 'app/img/parents/team-1.jpg' %}"
+                 class="testimonial-img" alt="Hari Singh Joshi">
+               <h3>Riya Mehra</h3>
+               <h4>Parent</h4>
+               <div class="stars">
+                 <i class="bi bi-star-fill"></i><i
+                   class="bi bi-star-fill"></i><i
+                   class="bi bi-star-fill"></i><i
+                   class="bi bi-star-fill"></i><i
+                   class="bi bi-star-fill"></i>
+               </div>
+               <p>
+                 <i class="bi bi-quote quote-icon-left"></i>
+                 <span>We are so happy with the progress our child has made.
+                   The tutors are experienced, professional, and very
+                   supportive. Highly recommend this platform to other
+                   parents looking for quality home tuition!</span>
+                 <i class="bi bi-quote quote-icon-right"></i>
+               </p>
+             </div>
+           </div><!-- End testimonial item -->
+
+           <div class="col-lg-6">
+             <div class="testimonial-item">
+               <img src="{% static 'app/img/parents/team-2.jpg' %}"
+                 class="testimonial-img" alt="Rohani Mehta">
+               <h3>Dr.Rohit Mehta</h3>
+               <h4>Parent</h4>
+               <div class="stars">
+                 <i class="bi bi-star-fill"></i><i
+                   class="bi bi-star-fill"></i><i
+                   class="bi bi-star-fill"></i><i
+                   class="bi bi-star-fill"></i><i
+                   class="bi bi-star-fill"></i>
+               </div>
+               <p>
+                 <i class="bi bi-quote quote-icon-left"></i>
+                 <span>The tutoring service has been amazing for my son. He
+                   has gained confidence in his studies and has been
+                   performing much better in his exams. Thank you to all the
+                   tutors!</span>
+                 <i class="bi bi-quote quote-icon-right"></i>
+               </p>
+             </div>
+           </div><!-- End testimonial item -->
+
+           <div class="col-lg-6" data-aos="fade-up">
+             <div class="testimonial-item">
+               <img src="{% static 'app/img/parents/team-3.webp' %}"
+                 class="testimonial-img" alt="Ayush Kumar">
+               <h3>Dr.Ayush Kumar</h3>
+               <h4>Parent</h4>
+               <div class="stars">
+                 <i class="bi bi-star-fill"></i><i
+                   class="bi bi-star-fill"></i><i
+                   class="bi bi-star-fill"></i><i
+                   class="bi bi-star-fill"></i><i
+                   class="bi bi-star-fill"></i>
+               </div>
+               <p>
+                 <i class="bi bi-quote quote-icon-left"></i>
+                 <span>I'm truly satisfied with the quality of tutoring my
+                   daughter is receiving. The tutors provide individual
+                   attention and explain things clearly, making it easier for
+                   her to grasp concepts.</span>
+                 <i class="bi bi-quote quote-icon-right"></i>
+               </p>
+             </div>
+           </div><!-- End testimonial item -->
+
+           <div class="col-lg-6" data-aos="fade-up">
+             <div class="testimonial-item">
+               <img src="{% static 'app/img/parents/team-4.jpg' %}"
+                 class="testimonial-img" alt="Jissan Siddiqi">
+               <h3>Nikita Kukreja</h3>
+               <h4>Parent</h4>
+               <div class="stars">
+                 <i class="bi bi-star-fill"></i><i
+                   class="bi bi-star-fill"></i><i
+                   class="bi bi-star-fill"></i><i
+                   class="bi bi-star-fill"></i><i
+                   class="bi bi-star-fill"></i>
+               </div>
+               <p>
+                 <i class="bi bi-quote quote-icon-left"></i>
+                 <span>The tutors here have been a blessing for my child. The
+                   personalized lessons and constant support have made a huge
+                   difference in my child's academic performance. I am
+                   grateful for the help!</span>
+                 <i class="bi bi-quote quote-icon-right"></i>
+               </p>
+             </div>
+           </div><!-- End testimonial item -->
+
+         </div><!-- End row -->
+       </section>
+       <!--teacher section-->
+
+       <section id="teachers" class="container my-5">
+         <h2 class="text-center mb-5">Meet Our Teachers</h2>
+       
+         <div class="row g-5">
+           {% for teacher in teachers %}
+           <div class="col-12 col-md-6">
+             <div class="testimonial-item">
+               <!-- Teacher's Image and Name -->
+               <div class="d-flex flex-column align-items-center text-center">
+                
+                 <h3>{{ teacher.name }}</h3>
+               </div>
+       
+               <!-- Teacher's Details -->
+               <div class="teacher-details">
+                 <p>
+                   <strong>Class 10:</strong> {{ teacher.class_10_percentage }}% |
+                   <strong>Class 12:</strong> {{ teacher.class_12_percentage }}%
+                 </p>
+                 <p>
+                   <strong>Degree:</strong> {{ teacher.degree_name }} ({{ teacher.degree_percentage }}%)
+                 </p>
+               </div>
+       
+               <!-- Teacher's Opinion -->
+               <h6 class="mt-3">Why Choose This Teacher?</h6>
+               <p>
+                 <i class="bi bi-quote quote-icon-left"></i>
+                 <span>{{ teacher.opinion }}</span>
+                 <i class="bi bi-quote quote-icon-right"></i>
+               </p>
+             </div>
+           </div>
+           {% empty %}
+           <!-- Display if no teachers are found -->
+           <div class="col-12">
+             <p class="text-center">No teachers found at the moment. Please check back later.</p>
+           </div>
+           {% endfor %}
+         </div>
+       </section>
+       
+       <!-- End Teacher Item -->
+
+       <!-- Add more teacher items here -->
+
+     </div><!-- End row -->
+   </section>
+
+   <!-- end section -->
+
+   <section id="faq" class="container mt-5">
+     <!-- FAQ Section with Flexbox for Horizontal Layout -->
+     <div class="row align-items-center">
+       <!-- Left Side: Arrow SVG -->
+       <div class="col-lg-5" data-aos="fade-up">
+         <h2 class="faq-title">Have a question? Check out the FAQ</h2>
+         <p class="faq-description">Kindly check your answer on the right
+           side..</p>
+         <div class="faq-arrow d-none d-lg-block" data-aos="fade-up"
+           data-aos-delay="200">
+           <svg class="faq-arrow" width="200" height="211"
+             viewBox="0 0 200 211" fill="none"
+             xmlns="http://www.w3.org/2000/svg">
+             <path
+               d="M198.804 194.488C189.279 189.596 179.529 185.52 169.407 182.07L169.384 182.049C169.227 181.994 169.07 181.939 168.912 181.884C166.669 181.139 165.906 184.546 167.669 185.615C174.053 189.473 182.761 191.837 189.146 195.695C156.603 195.912 119.781 196.591 91.266 179.049C62.5221 161.368 48.1094 130.695 56.934 98.891C84.5539 98.7247 112.556 84.0176 129.508 62.667C136.396 53.9724 146.193 35.1448 129.773 30.2717C114.292 25.6624 93.7109 41.8875 83.1971 51.3147C70.1109 63.039 59.63 78.433 54.2039 95.0087C52.1221 94.9842 50.0776 94.8683 48.0703 94.6608C30.1803 92.8027 11.2197 83.6338 5.44902 65.1074C-1.88449 41.5699 14.4994 19.0183 27.9202 1.56641C28.6411 0.625793 27.2862 -0.561638 26.5419 0.358501C13.4588 16.4098 -0.221091 34.5242 0.896608 56.5659C1.8218 74.6941 14.221 87.9401 30.4121 94.2058C37.7076 97.0203 45.3454 98.5003 53.0334 98.8449C47.8679 117.532 49.2961 137.487 60.7729 155.283C87.7615 197.081 139.616 201.147 184.786 201.155L174.332 206.827C172.119 208.033 174.345 211.287 176.537 210.105C182.06 207.125 187.582 204.122 193.084 201.144C193.346 201.147 195.161 199.887 195.423 199.868C197.08 198.548 193.084 201.144 195.528 199.81C196.688 199.192 197.846 198.552 199.006 197.935C200.397 197.167 200.007 195.087 198.804 194.488ZM60.8213 88.0427C67.6894 72.648 78.8538 59.1566 92.1207 49.0388C98.8475 43.9065 106.334 39.2953 114.188 36.1439C117.295 34.8947 120.798 33.6609 124.168 33.635C134.365 33.5511 136.354 42.9911 132.638 51.031C120.47 77.4222 86.8639 93.9837 58.0983 94.9666C58.8971 92.6666 59.783 90.3603 60.8213 88.0427Z"
+               fill="currentColor"></path>
+           </svg>
+         </div>
+       </div>
+
+       <!-- Right Side: FAQ Accordion -->
+       <div class="col-lg-7">
+         <h2 class="text-center mb-5">Frequently Asked Questions</h2>
+         <div class="accordion" id="faqAccordion">
+           <div class="accordion-item">
+             <h2 class="accordion-header" id="faqHeadingOne">
+               <button class="accordion-button custom-accordion-button"
+                 type="button" data-bs-toggle="collapse"
+                 data-bs-target="#faqCollapseOne" aria-expanded="true"
+                 aria-controls="faqCollapseOne">
+                 What is the Tution app?
+               </button>
+             </h2>
+             <div id="faqCollapseOne"
+               class="accordion-collapse collapse show"
+               aria-labelledby="faqHeadingOne"
+               data-bs-parent="#faqAccordion">
+               <div class="accordion-body">
+                 Our Tution app connects parents with experienced home tutors
+                 for students of all levels, from Class 1 to 12. It aims to
+                 make education more accessible by providing personalized
+                 home tutoring services.
+               </div>
+             </div>
+           </div>
+
+           <div class="accordion-item">
+             <h2 class="accordion-header" id="faqHeadingTwo">
+               <button
+                 class="accordion-button custom-accordion-button collapsed"
+                 type="button" data-bs-toggle="collapse"
+                 data-bs-target="#faqCollapseTwo" aria-expanded="false"
+                 aria-controls="faqCollapseTwo">
+                 What is the student progress rate?
+               </button>
+             </h2>
+             <div id="faqCollapseTwo" class="accordion-collapse collapse"
+               aria-labelledby="faqHeadingTwo"
+               data-bs-parent="#faqAccordion">
+               <div class="accordion-body">
+                 Our tutors use various tracking tools to assess student
+                 progress regularly. We ensure that each student receives
+                 personalized attention, and parents will be kept updated on
+                 their child's performance and progress.
+               </div>
+             </div>
+           </div>
+
+           <div class="accordion-item">
+             <h2 class="accordion-header" id="faqHeadingThree">
+               <button
+                 class="accordion-button custom-accordion-button collapsed"
+                 type="button" data-bs-toggle="collapse"
+                 data-bs-target="#faqCollapseThree" aria-expanded="false"
+                 aria-controls="faqCollapseThree">
+                 What are the fees for home tuition?
+               </button>
+             </h2>
+             <div id="faqCollapseThree" class="accordion-collapse collapse"
+               aria-labelledby="faqHeadingThree"
+               data-bs-parent="#faqAccordion">
+               <div class="accordion-body">
+                 The fees for home tuition depend on the subject, class, and
+                 location of the tutor. For detailed pricing, please fill out
+                 the form above, and we will provide a custom quote based on
+                 your requirements.
+               </div>
+             </div>
+           </div>
+
+           <div class="accordion-item">
+             <h2 class="accordion-header" id="faqHeadingFour">
+               <button
+                 class="accordion-button custom-accordion-button collapsed"
+                 type="button" data-bs-toggle="collapse"
+                 data-bs-target="#faqCollapseFour" aria-expanded="false"
+                 aria-controls="faqCollapseFour">
+                 How do I hire a tutor?
+               </button>
+             </h2>
+             <div id="faqCollapseFour" class="accordion-collapse collapse"
+               aria-labelledby="faqHeadingFour"
+               data-bs-parent="#faqAccordion">
+               <div class="accordion-body">
+                 To hire a tutor, simply fill out the form above with your
+                 child's class, subjects required, and location. Our team
+                 will then match you with a qualified tutor based on your
+                 preferences.
+               </div>
+             </div>
+           </div>
+
+           <div class="accordion-item">
+             <h2 class="accordion-header" id="faqHeadingFive">
+               <button
+                 class="accordion-button custom-accordion-button collapsed"
+                 type="button" data-bs-toggle="collapse"
+                 data-bs-target="#faqCollapseFive" aria-expanded="false"
+                 aria-controls="faqCollapseFive">
+                 Can I request a specific tutor?
+               </button>
+             </h2>
+             <div id="faqCollapseFive" class="accordion-collapse collapse"
+               aria-labelledby="faqHeadingFive"
+               data-bs-parent="#faqAccordion">
+               <div class="accordion-body">
+                 Yes, if you have a specific tutor in mind, you can request
+                 them through the form, and we will do our best to
+                 accommodate your request. However, availability may vary.
+               </div>
+             </div>
+           </div>
+         </div>
+       </div>
+     </div>
+   </section>
+
+   <!-- contact section-->
+   <section id="contact" class="contact section py-5 bg-light">
+     <div class="container">
+       <!-- Section Title -->
+       <div class="section-title text-center mb-5">
+         <h2>Contact Us</h2>
+         <p class="text-muted">We'd love to hear from you! Reach out using
+           the details below or find us on the map.</p>
+       </div>
+
+       <div class="row g-4">
+         <!-- Contact Info Card -->
+         <div class="col-lg-5">
+           <div class="card shadow-sm">
+             <div class="card-body">
+               <h3 class="card-title mb-4">Get in Touch</h3>
+
+               <ul class="list-unstyled">
+                 <li class="mb-3">
+                   <i class="bi bi-geo-alt text-primary me-2"></i>
+                   <strong>Address:</strong> 248011 Takshshila Library,
+                   Bahadurpur Road, Uttarakhand
+                 </li>
+                 <li class="mb-3">
+                   <i class="bi bi-telephone text-primary me-2"></i>
+                   <strong>Phone:</strong>
+                   <a href="tel:+918859991011"
+                     class="text-decoration-none text-primary">+91 8859991011</a><br>
+                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                   &nbsp;<strong>Phone:</strong>
+                   <a href="tel:+917248551412"
+                     class="text-decoration-none text-primary">+91 7248551412</a>
+                 </li>
+                 <li class="mb-3">
+                   <i class="bi bi-envelope text-primary me-2"></i>
+                   <strong>Email:</strong>
+                   <a href="mailto:hargharpathshala03@gmail.com"
+                     class="text-decoration-none text-primary">hargharpathshala03@gmail.com</a>
+                 </li>
+
+                 
+               
+
+
+               </ul>
+             </div>
+           </div>
+         </div>
+
+         <!-- Map Card -->
+         <div class="col-lg-7">
+           <div class="card shadow-sm">
+             <div class="card-body">
+               <h3 class="card-title mb-4">Our Location</h3>
+               <div class="map-responsive">
+                 <iframe
+                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3442.7996558532523!2d77.86211277502265!3d30.35664320371239!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390f2b17483d0e85%3A0xc0247e17de7012a5!2sTakshshila%20Library!5e0!3m2!1sen!2sin!4v1737531916012!5m2!1sen!2sin"
+                   width="100%" height="350" style="border:0;"
+                   allowfullscreen loading="lazy"
+                   referrerpolicy="no-referrer-when-downgrade"></iframe>
+               </div>
+             </div>
+           </div>
+         </div>
+       </div>
+     </div>
+   </section>
+
+ </div>
+
+ <script>
+   document.addEventListener("DOMContentLoaded", function () {
+     const texts = document.querySelectorAll('.animated-text');
+     let index = 0;
+ 
+     function showText() {
+         texts.forEach(text => text.classList.remove('active'));
+         texts[index].classList.add('active');
+         index = (index + 1) % texts.length; // Loop back to the first text
+         setTimeout(showText, 1000); // Show next text after 1 second
+     }
+ 
+     // Start the animation
+     showText();
+ });
+ </script>
+
+ 
+
+
+{%endblock container%}
+   
+   

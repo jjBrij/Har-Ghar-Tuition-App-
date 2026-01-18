@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+{% block title %}Result{% endblock title %}
+
+{%block container%}
+
+<br>
+    <div class="container mt-5">
+      <h1 class="text-center mb-4">Search Student Results</h1>
+
+      <!-- Search Box -->
+      <form method="GET" action="{% url 'result' %}" class="mb-5">
+        <div class="input-group">
+          <input
+            type="text"
+            name="q"
+            class="form-control"
+            placeholder="Enter student name or roll number"
+            value="{{ query|default:'' }}"
+            required
+          />
+          <button type="submit" class="btn btn-primary">Search</button>
+        </div>
+      </form>
+
+      <!-- Results -->
+      {% if student %}
+      <div class="card">
+        <div class="card-body">
+          <h3 class="card-title text-center">{{ student.student_name }}</h3>
+          <h4 class="card-subtitle mb-4 text-center text-muted">
+            Roll No: {{ student.roll_no }}
+          </h4>
+
+          {% if results %}
+          <table class="table table-bordered">
+            <thead class="table-dark">
+              <tr>
+                <th>Subject</th>
+                <th>Full Marks</th>
+                <th>Passing Marks</th>
+                <th>Obtained Marks</th>
+                <th>Time</th>
+              </tr>
+            </thead>
+            <tbody>
+              {% for result in results %}
+              <tr>
+                <td>{{ result.subject_name }}</td>
+                <td>{{ result.full_marks }}</td>
+                <td>{{ result.passing_marks }}</td>
+                <td>{{ result.obtained_marks }}</td>
+                <td>{{ result.created_at }}</td>
+              </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+          {% else %}
+          <p class="text-center text-warning">
+            No results found for this student.
+          </p>
+          {% endif %}
+        </div>
+      </div>
+      {% elif query %}
+      <p class="text-center text-danger">
+        No student found with the given name or roll number.
+      </p>
+      {% endif %}
+    </div>
+   
+
+{%endblock container%}
+   

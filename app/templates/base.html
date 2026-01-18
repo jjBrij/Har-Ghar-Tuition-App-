@@ -1,0 +1,596 @@
+<!doctype html>
+<html lang="en">
+  {% load static %}
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="HarGharPathshala">
+    <meta name="description" content="Empower your learning journey with our top-notch tutoring services. HarGharPathshala connects students with the best home and online tutors, offering a comprehensive LMS and expert guidance for academic success.">
+    <meta name="keywords" content="tuition, home tuition, online learning, learning management system, tutoring, academic success, online classes, CBSE, ICSE, ISC, competitive exams, language courses, IT training, degree courses">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#007BFF">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://hargharpathshala.onrender.com/">
+    <meta property="og:title" content="HarGharPathshala - Home & Online Tuition Services">
+    <meta property="og:description" content="Eliminate barriers in education with our high-quality tutoring services. HarGharPathshala offers personalized home and online tuition, a comprehensive LMS, and expert guidance.">
+    <meta property="og:image" content="https://hargharpathshala.onrender.com/static/app/img/logo.png">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://hargharpathshala.onrender.com/">
+    <meta property="twitter:title" content="HarGharPathshala - Home & Online Tuition Services">
+    <meta property="twitter:description" content="Empower your learning journey with top-notch tutoring services. Join HarGharPathshala for personalized education with home and online tutors.">
+    <meta property="twitter:image" content="https://hargharpathshala.onrender.com/static/app/img/logo.png">
+    
+    <!-- Favicons -->
+    <link rel="icon" href="{% static 'app/img/logo.png' %}" type="image/x-icon">
+    <link rel="apple-touch-icon" href="{% static 'app/img/logo.png' %}">
+    
+    <!-- Additional Metadata -->
+    <meta name="application-name" content="HarGharPathshala">
+    <meta name="msapplication-TileColor" content="#007BFF">
+    <meta name="msapplication-config" content="browserconfig.xml">
+    <meta name="google-site-verification" content="google66c542dfa6c89639.html">
+      
+    
+
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Roboto:wght@400&display=swap"
+      rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet">
+    <link href="{% static 'app/css/main.css' %}" rel="stylesheet">
+    <title>Tution | {% block title %}{% endblock title %} </title>
+    <link rel="icon" href="{% static 'app/img/logo.png' %}" type="image/x-icon">
+  </head>
+  <style>
+    .feature-list-wrapper {
+      margin-bottom: 2rem;
+    }
+    
+    .feature-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    
+    .feature-list li {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin-bottom: 1rem;
+      font-size: 1rem;
+    }
+    
+    .feature-list li i {
+      color: #1E88E5;
+      font-size: 1.25rem;
+    }
+   .company-badge {
+      display: inline-flex;
+      align-items: center;
+      padding: 0.5rem 1rem;
+      background-color: color-mix(in srgb, #1E88E5, transparent 92%);
+      border-radius: 50px;
+      color: #1E88E5;
+      font-weight: 500;
+    }
+    
+   .company-badge i {
+      font-size: 1.25rem;
+    }
+    #text-container {
+      font-size: 2rem;
+      font-weight: bold;
+      text-align: center;
+      white-space: nowrap;
+      overflow: hidden;
+      position: relative;
+      height: 2.5rem; /* Adjust based on font size */
+    }
+    .animated-text {
+      position: absolute;
+      opacity: 0;
+      transition: opacity 0.5s ease-in-out;
+    }
+    .animated-text.active {
+      opacity: 1;
+    }
+    .responsive-img {
+      width: 50%;        /* Image takes up the full width of its parent container */
+      max-width: 120px;   /* Set a max-width so the image doesn't become too large */
+      height: auto;       /* Maintain aspect ratio */
+      display: block;     /* Removes extra space below the image */
+      margin: 0 auto;     /* Centers the image horizontally */
+    }
+    .navbar{
+      border-radius: 10px;
+      background-color: #007bff; /* Blue background */
+      color: white; /* Text color */
+      padding: 10px 20px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+      transition: all 0.3s ease-in-out;
+      z-index: 1000;
+    }
+    a {
+      text-decoration: none; /* Remove underline */
+    }
+    
+   </style>
+  <body>
+
+    <div class="svg-container">
+      <a href="https://wa.me/+918859991011" target="_blank">
+        <!-- Replace with your WhatsApp link -->
+        <img src="{% static 'app/img/whatsapp.svg' %}" alt="WhatsApp Icon"
+          width="30" height="30">
+      </a>
+      <a href="https://www.instagram.com/yourprofile" target="_blank">
+        <!-- Replace with your Instagram profile link -->
+        <img src="{% static 'app/img/instagram.svg' %}" alt="Instagram Icon"
+          width="30" height="30">
+      </a>
+      <a href="https://www.linkedin.com/in/yourprofile" target="_blank">
+        <!-- Replace with your LinkedIn profile link -->
+        <img src="{% static 'app/img/linkedin.svg' %}" alt="LinkedIn Icon"
+          width="30" height="30">
+      </a>
+      <a href="mailto:hargharpathshala03@gmail.com"> <!-- Replace with your email -->
+        <img src="{% static 'app/img/gmail.svg' %}" alt="Gmail Icon" width="30"
+          height="30">
+      </a>
+      <a href="tel:+918859991011"> <!-- Replace with your phone number -->
+        <img src="{% static 'app/img/phone.svg' %}" alt="Phone Icon" width="30"
+          height="30">
+      </a>
+    </div>
+
+    <button class="vertical-button" data-bs-toggle="modal"
+      data-bs-target="#staticBackdropx">Hire Tutor</button>
+    <div class="modal fade" id="staticBackdropx" data-bs-backdrop="static"
+      data-bs-keyboard="false" tabindex="-1"
+      aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">Tutor Hiring
+              Form</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"
+              aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+
+            <!-- Card for the form -->
+
+            <div class="card border-primary shadow-lg">
+              <div class="card-header bg-primary text-black text-center">
+                <h4 style="color:black;">Tutor Hiring Form</h4>
+
+              </div>
+              <div class="card-body">
+                <form method="post" action="{% url 'home' %}"
+                  onsubmit="handleFormSubmit(event)">
+
+                  {% csrf_token %}
+                  <div class="row">
+                    <!-- Name -->
+                    <div class="col-md-6 mb-3">
+                      <label for="name" class="form-label">Full Name <span
+                          class="text-danger">*</span></label>
+                      <input type="text" class="form-control" id="name"
+                        name="name" placeholder="Enter your full name" required>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="col-md-6 mb-3">
+                      <label for="email" class="form-label">Email Address <span
+                          class="text-danger">*</span></label>
+                      <input type="email" class="form-control" id="email"
+                        name="email" placeholder="Enter your email address"
+                        required>
+                    </div>
+
+                    <!-- Class of Study (Dropdown) -->
+                    <div class="col-md-6 mb-3">
+                      <label for="class_of_study" class="form-label">Class of
+                        Study <span class="text-danger">*</span></label>
+                      <select class="form-select" id="class_of_study"
+                        name="class_of_study" onchange="updateSubjects()"
+                        required>
+                        <option value selected disabled>Select Class or
+                          Course</option>
+                        <!-- School Classes -->
+                        <option value="class1">Class 1</option>
+                        <option value="class2">Class 2</option>
+                        <option value="class3">Class 3</option>
+                        <option value="class4">Class 4</option>
+                        <option value="class5">Class 5</option>
+                        <option value="class6">Class 6</option>
+                        <option value="class7">Class 7</option>
+                        <option value="class8">Class 8</option>
+                        <option value="class9">Class 9</option>
+                        <option value="class10">Class 10</option>
+                        <option value="class11">Class 11</option>
+                        <option value="class12">Class 12</option>
+                        <option value="computer_engineering">Computer Engineering</option>
+                        <option value="mechanical_engineering">Mechanical Engineering</option>
+                        <option value="electrical_engineering">Electrical Engineering</option>
+                        <option value="civil_engineering">Civil Engineering</option>
+                        <option value="electronics_engineering">Electronics Engineering</option>
+                        <option value="business_management">Business Management</option>
+                        <option value="medicine">Medicine</option>
+                        <option value="law">Law</option>
+                        <option value="architecture">Architecture</option>
+                        <option value="arts">Arts</option>
+                        <option value="Technology">Technology</option>
+                        <option value="Science">Science</option>
+                        <option value="Arts">Arts</option>
+                        <option value="Commerce">Commerce</option>
+                        <option value="CompetitiveExams">Competitive Exams</option>
+                        <option value="LanguageClasses">Language Classes</option>
+                        <option value="ProgrammingLanguages">Programming Languages</option>
+                        <option value="ITTrainingCourses">IT Training Courses</option>
+                        <option value="InternationalExams">International Exams</option>
+                        <option value="DegreeCourses">Degree Courses</option>
+                        <option value="Others">Others</option>
+                      </select>
+                    </div>
+
+                    <!-- Subjects (Checkboxes based on class) -->
+                    <div class="col-md-6 mb-3">
+                      <label for="subjects" class="form-label">Subjects</label>
+                      <div id="subject-selection" class="subject-options">
+                        <!-- Checkboxes for subjects will be populated here -->
+                      </div>
+
+                    </div>
+
+                    <!-- Number of Children/Students -->
+                    <div class="col-md-6 mb-3">
+                      <label for="num_children" class="form-label">Number of
+                        Children/Students <span
+                          class="text-danger">*</span></label>
+                      <input type="number" class="form-control"
+                        id="num_children" name="num_children" min="1"
+                        placeholder="Enter the number of children/students"
+                        required>
+                    </div>
+
+                    <!-- Contact Number -->
+                    <div class="col-md-6 mb-3">
+                      <label for="contact_number" class="form-label">Contact
+                        Number <span class="text-danger">*</span></label>
+                      <input type="tel" class="form-control" id="contact_number"
+                        name="contact_number" pattern="[0-9]{10}"
+                        placeholder="Enter your contact number (10 digits)"
+                        required>
+                      <small class="text-muted">Format: 1234567890</small>
+                    </div>
+
+                    <!-- Address -->
+                    <div class="col-md-12 mb-3">
+                      <label for="address" class="form-label">Address <span
+                          class="text-danger">*</span></label>
+                      <textarea class="form-control" id="address" name="address"
+                        rows="3" placeholder="Enter your address"
+                        required></textarea>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div class="col-md-12 text-center mt-3">
+                      <button type="submit" class="btn btn-primary">Submit
+                        Application</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary"
+              data-bs-dismiss="modal">Close</button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--
+modals    
+-->
+
+<div class="container-fluid sticky-top">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="{% url 'home' %}#about-us">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'home' %}#services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'home' %}#reviews">Reviews</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'home' %}#teachers">Teachers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'home' %}#contact">Contact-Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'result' %}">Result</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'payment' %}">Payment</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'tutor_application' %}">Careers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'admin:index' %}">Admin</a>
+          </li>
+        </ul>
+        <button class="btn btn-primary m-5" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Contact</button>
+      </div>
+      <img src="{% static 'app/img/harghar.png' %}" alt="Har Ghar" class="responsive-img">
+      <a href="tel:+918859991011"> <!-- Replace with your phone number -->
+        <img src="{% static 'app/img/phone.svg' %}" alt="Phone Icon" width="30"
+          height="30">8859991011 | 7248551412
+      </a>
+    </div>
+   
+  </nav>
+</div>
+
+    <!-- Page Heading -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static"
+      data-bs-keyboard="false" tabindex="-1"
+      aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">Contact Us</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"
+              aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="container">
+
+              <div class="row g-4">
+                <!-- Contact Info Card -->
+                <div class="col-lg">
+                  <div class="card shadow-sm">
+                    <div class="card-body">
+                      <h3 class="card-title mb-4">Get in Touch</h3>
+
+                      <ul class="list-unstyled">
+                        <li class="mb-3">
+                          <i class="bi bi-geo-alt text-primary me-2"></i>
+                          <strong>Address:</strong> 248011 Takshshila Library, Bahadurpur Road, Selaqui,Dehradun
+                        </li>
+                        <li class="mb-3">
+                          <i class="bi bi-telephone text-primary me-2"></i>
+                          <strong>Phone:</strong>
+                          <a href="tel:+918859991011"
+                            class="text-decoration-none text-primary">+91 8859991011</a><br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                          &nbsp;<strong>Phone:</strong>
+                          <a href="tel:+917248551412"
+                            class="text-decoration-none text-primary">+91 7248551412</a>
+                        </li>
+                        <li class="mb-3">
+                          <i class="bi bi-envelope text-primary me-2"></i>
+                          <strong>Email:</strong>
+                          <a href="mailto:HarGharpathshala03@gmail.com"
+                            class="text-decoration-none text-primary">HarGharpathshala03@gmail.com</a>
+                        </li>
+
+                        <li class="mb-3">
+                          <i class="bi bi-star text-primary me-2"></i>
+                          <strong>Rate Us:</strong>
+                          <button type="button" class="btn btn-rating"
+                            data-bs-toggle="modal"
+                            data-bs-target="#exampleModal"
+                            style="color: #15ff00; border: none; background: none;">
+                            Click Here
+                          </button>
+                        </li>
+                       
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1"
+                          aria-labelledby="exampleModalLabel"
+                          aria-hidden="true">
+                          <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title"
+                                  id="exampleModalLabel">Rate Us</h5>
+                                <button type="button" class="btn-close"
+                                  data-bs-dismiss="modal"
+                                  aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body">
+                                <!-- Embed the Google Form -->
+                                <iframe
+                                  src="https://docs.google.com/forms/d/e/1FAIpQLScnycJwg1y0cTvqrCARyg2XBFJwxJEjeuG9_WbMPFsHMs5dFw/viewform?embedded=true"
+                                  width="100%"
+                                  height="500"
+                                  frameborder="0"
+                                  marginheight="0"
+                                  marginwidth="0"
+                                  style="border: none; display: block;">
+                                </iframe>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-primary"
+                                  data-bs-dismiss="modal">Close</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Map Card -->
+              </div>
+            </div>
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger"
+              data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Call</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- About Section -->
+   <br>
+
+
+   {%block container%}
+
+   
+   {%endblock container%}
+
+
+    <footer id="footer" class="footer">
+      <div class="container footer-top">
+        <div class="row gy-4">
+          <div class="col-lg-4 col-md-6 footer-about">
+            <a href="index.html" class="logo d-flex align-items-center">
+              <span class="sitename">HarGhar Pathshala</span>
+            </a>
+            <div class="footer-contact pt-3">
+              <p>248011 Takshshila Library</p>
+              <p>Bahadurpur Road,Selaqui, Dehradun</p>
+              <p class="mt-3"><strong>Phone:</strong> <a
+                  href="tel:+918859991011">+91 8859991011</a></p>
+                  <p class="mt-3"><strong>Phone:</strong> <a
+                    href="tel:+917248551412">+91 7248551412</a></p>
+              <p><strong>Email:</strong> <a
+                  href="mailto:HarGharpathshala03@gmail.com">HarGharpathshala03@gmail.com</a></p>
+
+            </div>
+            <div class="social-links d-flex mt-4">
+              <a href="#"><i class="bi bi-facebook"></i></a>
+              <a href="#"><i class="bi bi-instagram"></i></a>
+              <a href="#"><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><a href="/">Home</a></li>
+              <li><a href="{% url 'home' %}#about-us">About Us</a></li>
+              <li><a href="{% url 'home' %}#services">Services</a></li>
+              <li><a href="{% url 'home' %}#teachers">Tutors</a></li>
+              <li><a href="{% url 'home' %}#faq">FAQ</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><a href="{% url 'home' %}#services">Online Tutoring</a></li>
+              <li><a href="{% url 'home' %}#services">Personalized Learning</a></li>
+              <li><a href="{% url 'result' %}">Progress Tracking</a></li>
+              <li><a href="{% url 'tutor_application' %}">Carrier</a></li>
+              <li><a href="{% url 'result' %}">Result</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Quick Access</h4>
+            <ul>
+              <li><a href="#">For Students</a></li>
+              <li><a href="#{% url 'tutor_application' %}">For Tutors</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="{% url 'home' %}#contact">Contact Us</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Additional Features</h4>
+            <ul>
+              <li><a href="#">Interactive Whiteboard</a></li>
+              <li><a href="#">Video Conferencing</a></li>
+              <li><a href="#">File Sharing</a></li>
+              <li><a href="#">Assignments & Quizzes</a></li>
+              <li><a href="#">Term and Conditions</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="container copyright text-center mt-4">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">HarGhar Pathshala</strong> <span>All Rights Reserved</span></p>
+        <div class="credits">
+          Designed by <a href="#">Hari Singh Joshi</a>
+        </div>
+        <nav>
+          <ul class="list-inline text-center">
+            <li class="list-inline-item">
+              <a href="{% url 'home' %}#about-us" class="text-decoration-none">About Us</a>
+            </li>
+            <li class="list-inline-item">
+              <a href="{% url 'privacy'%}" class="text-decoration-none">Privacy Policy</a>
+            </li>
+            <li class="list-inline-item">
+              <a href="{% url 'terms'%}" class="text-decoration-none">Terms & Conditions</a>
+            </li>
+            <li class="list-inline-item">
+              <a href="{% url 'home' %}#contact" class="text-decoration-none">Contact Us</a>
+            </li>
+          </ul>
+        </nav>
+
+
+
+      </div>
+    </footer>
+ 
+      
+    <script src="{% static 'app/js/main.js' %}"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"></script>
+  </body>
+</html>

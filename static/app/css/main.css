@@ -1,0 +1,499 @@
+/* Root Variables for Colors and Common Values */
+:root {
+  /* Primary Colors */
+--primary-color: #4CAF50; /* Fresh green for branding, symbolizing growth and learning */
+--accent-color: #FFC107; /* Warm yellow for call-to-actions, like buttons or highlights */
+--secondary-color: #0288D1; /* Vibrant blue for secondary actions and links */
+
+/* Neutral and Background Colors */
+--dark-color: #2C3E50; /* Deep navy blue for strong text and headings */
+--light-gray: #ECF0F1; /* Soft, calming gray for subtle background sections */
+--lighter-gray: #FDFDFD; /* Off-white for clean, airy layouts */
+--text-gray: #34495E; /* Muted blue-gray for body text for easy readability */
+
+/* Hover and Interactive Colors */
+--hover-color: #FF5722; /* Energizing orange for hover effects and interactions */
+
+/* Design Settings */
+--transition-time: 0.3s; /* Smooth transitions for hover effects */
+--border-radius: 8px; /* Slightly rounded edges for modern design aesthetics */
+margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Example Usage */
+body {
+  background-color: var(--lighter-gray);
+  color: var(--text-gray);
+  font-family: 'Arial', sans-serif;
+}
+
+header {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+button {
+  background-color: var(--accent-color);
+  color: var(--dark-color);
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: var(--border-radius);
+  transition: background-color var(--transition-time);
+}
+
+button:hover {
+  background-color: var(--hover-color);
+  color: white;
+}
+
+.card {
+  background-color: var(--light-gray);
+  border-radius: var(--border-radius);
+  padding: 20px;
+  margin: 15px 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  background-color: var(--lighter-gray);
+  color: var(--text-gray);
+  text-align: center;
+  padding: 20px;
+}
+
+section {
+  padding: 50px 0;
+  background-color: var(--light-gray);
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+h1, h2, h3 {
+  font-family: 'Merriweather', serif;
+}
+.nav-link {
+  font-size: 1rem;
+  font-weight: bolder;
+  color: var(--primary-color);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: all var(--transition-time) ease-in-out;
+}
+
+.nav-link:hover {
+  color: white;
+  background-color: var(--secondary-color);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+  border: 1px solid var(--primary-color);
+}
+
+.nav-link.active {
+  color: white;
+  background-color: rgb(124, 236, 107);
+  border: 1px solid var(--dark-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--primary-color);
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: var(--text-gray);
+  margin-bottom: 20px;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--border-radius);
+}
+
+.mission-vision .row {
+  margin-top: 40px;
+}
+
+#reviews {
+  padding: 60px 0;
+  background-color: var(--lighter-gray);
+}
+
+#reviews h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--dark-color);
+  margin-bottom: 40px;
+}
+
+.testimonial-item {
+  background: white;
+  border-radius: var(--border-radius);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  text-align: center;
+  transition: transform var(--transition-time), box-shadow var(--transition-time);
+}
+
+.testimonial-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.testimonial-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  object-fit: cover;
+}
+
+.testimonial-item h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--dark-color);
+}
+
+.testimonial-item h4 {
+  font-size: 1.2rem;
+  color: var(--text-gray);
+  margin-bottom: 15px;
+}
+
+.stars i {
+  color: var(--primary-color);
+  margin-right: 5px;
+}
+
+.testimonial-item p {
+  font-size: 1rem;
+  color: var(--text-gray);
+  line-height: 1.6;
+}
+
+.testimonial-item .quote-icon-left,
+.testimonial-item .quote-icon-right {
+  color: var(--primary-color);
+  font-size: 24px;
+}
+
+@media (max-width: 767px) {
+  #reviews h2 {
+    font-size: 2rem;
+  }
+  .testimonial-item {
+    padding: 20px;
+  }
+  .testimonial-item h3 {
+    font-size: 1.2rem;
+  }
+}
+
+.contact {
+  padding: 5rem 0;
+}
+
+.section-title h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.section-title p {
+  font-size: 1.1rem;
+  color: var(--text-gray);
+}
+
+.card {
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform var(--transition-time), box-shadow var(--transition-time);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.card-body .list-unstyled li {
+  font-size: 1rem;
+  color: var(--text-gray);
+  margin-bottom: 1rem;
+}
+
+.card-body .list-unstyled li i {
+  font-size: 1.3rem;
+  color: var(--secondary-color);
+}
+
+
+/* Map Responsiveness */
+.map-responsive {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 56.25%; /* Maintain aspect ratio */
+  height: 0;
+  background: var(--lighter-gray);
+  border-radius: var(--border-radius);
+}
+
+.map-responsive iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* Footer Styling */
+.footer {
+  background-color: var(--lighter-gray);
+  padding: 40px 0;
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+}
+
+.footer-top {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #dee2e6;
+  margin-bottom: 20px;
+}
+
+.footer-about .logo {
+  color: var(--primary-color);
+  font-weight: 700;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.social-links {
+  display: flex;
+  justify-content: start;
+  gap: 15px;
+  padding: 0;
+  list-style: none;
+}
+
+.social-links a {
+  font-size: 1.4rem;
+  color: #495057;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-links a:hover {
+  color: var(--hover-color);
+  transform: scale(1.1);
+}
+
+.footer h4 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--dark-color);
+  margin-bottom: 15px;
+}
+
+.footer ul {
+  padding: 0;
+  list-style: none;
+  margin: 0;
+}
+
+.footer li {
+  margin-bottom: 10px;
+}
+
+.footer li a {
+  color: var(--text-gray);
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.footer li a:hover {
+  color: var(--hover-color);
+  text-decoration: underline;
+}
+
+.footer .copyright {
+  padding-top: 20px;
+  text-align: center;
+  color: var(--text-gray);
+  font-size: 0.9rem;
+  border-top: 1px solid #dee2e6;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    text-align: center;
+  }
+  
+  .social-links {
+    justify-content: center;
+  }
+}
+.footer-contact {
+  text-align: left; /* Ensures the content is aligned to the left */
+}
+
+.footer-contact p {
+  margin: 0 0 10px; /* Adds spacing between the paragraphs */
+  color: var(--text-gray); /* Optional: Matches the text color with the rest of the footer */
+  font-size: 1rem; /* Optional: Ensures consistent font size */
+}
+
+.footer-contact a {
+  color: var(--primary-color); /* Optional: Makes links stand out */
+  text-decoration: none; /* Removes underlines from links */
+  transition: color 0.3s ease; /* Adds smooth hover effect */
+}
+
+.footer-contact a:hover {
+  color: var(--hover-color); /* Optional: Changes color on hover for better interaction */
+}
+
+.footer-contact strong {
+  font-weight: 600; /* Enhances visibility of labels like Phone and Email */
+}
+
+.vertical-button {
+  position: fixed; /* Stick to a specific location on the screen */
+  top: 50%; /* Center vertically */
+  left: 17px; /* Align to the left side */
+  transform: translateY(-50%) rotate(-90deg); /* Vertical rotation */
+  transform-origin: center left; /* Adjust rotation origin for alignment */
+  background-color: #007bff; /* Button background color */
+  color: white; /* Button text color */
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 0 10px 10px 0; /* Round the right edge */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  z-index: 9999;
+}
+
+/* Hover effect for the button */
+.vertical-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+.svg-container {
+  position: fixed;
+  top: 50%; /* Center vertically */
+  right: 0; /* Stick to the right side of the screen */
+  transform: translateY(-50%); /* Vertically center the container */
+  background-color: transparent; /* Make background transparent */
+  display: flex;
+  flex-direction: column;
+  gap: 4px; /* Space between the icons */
+  padding: 10px;
+  z-index: 9999;
+}
+
+#text-container {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  position: relative;
+  height: 2.5rem; /* Adjust based on font size */
+}
+.animated-text {
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+.animated-text.active {
+  opacity: 1;
+}
+
+.feature-list-wrapper {
+      margin-bottom: 2rem;
+    }
+    
+    .feature-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    
+    .feature-list li {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin-bottom: 1rem;
+      font-size: 1rem;
+    }
+    
+    .feature-list li i {
+      color: var(--primary-color);
+      font-size: 1.25rem;
+    }
+   .company-badge {
+      display: inline-flex;
+      align-items: center;
+      padding: 0.5rem 1rem;
+      background-color: color-mix(in srgb,var(--primary-color), transparent 92%);
+      border-radius: 50px;
+      color:var(--primary-color);
+      font-weight: 500;
+    }
+    
+   .company-badge i {
+      font-size: 1.25rem;
+    }
+    #text-container {
+      font-size: 2rem;
+      font-weight: bold;
+      text-align: center;
+      white-space: nowrap;
+      overflow: hidden;
+      position: relative;
+      height: 2.5rem; /* Adjust based on font size */
+    }
+    .animated-text {
+      position: absolute;
+      opacity: 0;
+      transition: opacity 0.5s ease-in-out;
+    }
+    .animated-text.active {
+      opacity: 1;
+    }
