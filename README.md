@@ -337,8 +337,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 For support, questions, or feedback:
 
 - Create an issue in the [GitHub repository](https://github.com/jjBrij/Har-Ghar-Tuition-App-/issues)
-- Email: [Your Email]
-- Website: [Your Website]
+- Email: [brijmohan2204@gmail.com]
+
 
 ---
 
